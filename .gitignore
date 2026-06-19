@@ -1,0 +1,78 @@
+# ==========================================
+#Temporary Files and General Logs
+# ==========================================
+*.log
+*.jou
+*.key
+*.fmt
+*.h
+*.rc
+*.bkm
+*.db
+*.wave
+*.vst
+*.vcd
+*.fsdb
+*.shm
+*.dsn
+
+# ==========================================
+# ModelSim / QuestaSim
+# ==========================================
+vsim.wlf
+quit.f
+transcript
+work/
+msim/
+*.mpf
+*.mti
+_info
+
+# ==========================================
+# Synopsys VCS
+# ==========================================
+simv
+simv.daidir/
+simv.vdb/
+csrc/
+ucli.key
+DVEfiles/
+inter.vpd
+urgReport/
+
+# ==========================================
+# Xilinx Vivado / ISim
+# ==========================================
+.Xil/
+xsim.dir/
+xil_*
+xsim*.backup
+*.pb
+*.str
+*.dir/
+xvlog.pb
+xelab.pb
+
+# ==========================================
+# Cadence Xcelium / Incisive (IUS)
+# ==========================================
+INCA_libs/
+xcelium.d/
+waves.shm/
+xrun.history
+xrun.log
+
+# ==========================================
+# Verilator
+# ==========================================
+obj_dir/
+*.mk
+*.d
+
+# ==========================================
+# IDSs and Editors
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*~
