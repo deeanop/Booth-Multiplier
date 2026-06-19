@@ -54,7 +54,7 @@ module BoothMultiplier(
     controls[4]? {fromAccToOutbus[7], fromAccToOutbus[7:1]}: 
     controls[2]? fromAdderToAcc: fromAccToOutbus;
   PIPOShiftRegister A(
-    .Shift_nLoad(1'b1),
+    .Shift_nLoad(1'b0),
     .serial_in(1'b0),
     .D(A_D),
     .Q(fromAccToOutbus),
@@ -67,7 +67,7 @@ module BoothMultiplier(
     controls[5]? {fromMultiplierToOutbus[7:1], 1'b0}:
     fromMultiplierToOutbus;
   PIPOShiftRegister Q(
-    .Shift_nLoad(1'b1),
+    .Shift_nLoad(1'b0),
     .serial_in(1'b0),
     .D(Q_D),
     .Q(fromMultiplierToOutbus),
