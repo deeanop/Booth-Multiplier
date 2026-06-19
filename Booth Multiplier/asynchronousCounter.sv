@@ -1,5 +1,7 @@
 module asynchronousCounter(
   input logic clk,
+  input logic reset,
+  input logic enable,
   output logic [2:0] Q
 );
   genvar i;
