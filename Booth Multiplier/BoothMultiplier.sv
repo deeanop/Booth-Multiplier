@@ -31,7 +31,7 @@ module BoothMultiplier(
     .c6(controls[6]),
     .COUNT7(COUNT7)
   );
-  assign toMultiplicand = controls[0] ? inbus : 8'b0;
+  assign toMultiplicand = controls[0] ? inbus : fromMToXor;
   assign END = controls[6];
   PIPONoShiftRegister M(
     .D(toMultiplicand),
